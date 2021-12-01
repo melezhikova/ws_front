@@ -4,7 +4,7 @@ import { showChat, drawAccount } from './chat';
 import { enteredMessage, inputedMessage } from './message';
 
 let you = null;
-const ws = new WebSocket('ws://melezhikova-first.herokuapp.com//ws');
+const ws = new WebSocket('wss://melezhikova-first.herokuapp.com//ws');
 
 ws.addEventListener('open', () => {
   console.log('connected');
